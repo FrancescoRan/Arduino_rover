@@ -20,9 +20,8 @@ int echoPin = 9;
 int trigPin = 8;
 int servo = 6;//servo = 3;
 
-// the setup routine runs once when you press reset:
+
 void setup() {
-  // initialize serial communication at 9600 bits per second:
 
   pinMode(ligth, OUTPUT);
   pinMode(IN1, OUTPUT);
@@ -41,7 +40,7 @@ void setup() {
   delay(400);
 }
 
-// the loop routine runs over and over again forever:
+// questo gira per sempre
 void loop() {
   while (bt.available() > 0) {
     char c = bt.read();
